@@ -1,0 +1,84 @@
++--------------------------------+
+|           Usuario              |
++--------------------------------+
+| - ID de usuario                |
+| - Nombre de usuario            |
+| - Correo electrónico           |
+| - Tipo de contenido consumido  |
+| - Tiempo en la plataforma      |
+| - Historial de visualización   |
+| - Preferencias de género       |
+| - Métodos de pago              |
+| - Perfil único                 |
+|_______________________________|
+| +agregarAListaReproduccion()   |
+| +calificarContenido()          |
+| +accederHistorialVisualizacion()|
++--------------------------------+
+       |           |
+       |           |
+       v           v
++--------------------------------+      +---------------------+
+|          Contenido             |      |  Lista de Reproducción  |
++--------------------------------+      +---------------------+
+| - Título                       |      | - Título                |
+| - Descripción                  |      | - Resumen               |
+| - Clasificación por edades     |      |_________________________|
+| - Imágenes de alta calidad     |      | +agregarContenido()    |
+| - Trailers                     |      | +eliminarContenido()   |
+|_______________________________|      |_________________________|
+                                       |
+                                       |
+                                       v
++--------------------------------+
+|             Pago               |
++--------------------------------+
+| - Método de pago               |
+| - Recibo                       |
+|_______________________________|
+| +generarRecibo()               |
++--------------------------------+
+       |
+       |
+       v
++--------------------------------+
+|  Historial de Visualización   |
++--------------------------------+
+| - Fecha de visualización      |
+| - Contenido visto             |
+| - Calificación otorgada       |
+|_______________________________|
+| +agregarVisualizacion()        |
+| +calificarContenido()          |
++--------------------------------+
+       |
+       |
+       v
++--------------------------------+
+|           Catálogo             |
++--------------------------------+
+| - Contenidos disponibles       |
+|_______________________________|
+| +agregarContenido()            |
+| +eliminarContenido()           |
++--------------------------------+
+       |
+       |
+       v
++--------------------------------+
+|   Recomendación Personalizada   |
++--------------------------------+
+| - Recomendaciones              |
+|_______________________________|
+| +generarRecomendaciones()      |
++--------------------------------+
+       |
+       |
+       v
++--------------------------------+
+|           Seguridad             |
++--------------------------------+
+| - Medidas de seguridad         |
+|_______________________________|
+| +protegerDatos()               |
++--------------------------------+
